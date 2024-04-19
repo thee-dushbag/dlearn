@@ -1,6 +1,6 @@
 # Deep Learning <sub><sub>📚</sub></sub>
 
-So, good news, I found a book that's interesting and beginner friendly on `Deep Learning`, `Grokking Deep Learning` by `Andrew W. Trask`. I had read a similar one `Grokking Algorithms` by `Aditya` and I enjoyed the weekend with it. I'm hoping to have the ame experience reading this one.
+So, good news, I found a book that's interesting and beginner friendly on `Deep Learning`, `Grokking Deep Learning` by `Andrew W. Trask`. I had read a similar one `Grokking Algorithms` by `Aditya` and I enjoyed the weekend with it. I'm hoping to have the same experience reading this one.
 
 The main bait for this is that it requires `python` and `high school math` to read it and given its chapters, it is captivating and promising. I have all the requirements I need to embark on this journey.
 
@@ -14,3 +14,7 @@ The main bait for this is that it requires `python` and `high school math` to re
 ## Bonus
 
 Along side this book am looking at algorithms, project architecture, and math which should enable me to read this book swiftly. Have created a basic programming langunge as a project which up-ed my programming skills big time and deepened my python knowledge overall. With this, I'm ready to conquer the world.
+
+## Progress
+
+A few notes to track my progress can be found [here](/notes/index.md)
