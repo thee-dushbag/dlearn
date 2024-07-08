@@ -1,7 +1,7 @@
 import typing as ty
 
-type Vector = ty.Sequence[float]
-type Matrix = ty.Sequence[Vector]
+type Vector = tuple[float, ...]
+type Matrix = tuple[Vector, ...]
 type Transformer = ty.Callable[[float], float]
 
 

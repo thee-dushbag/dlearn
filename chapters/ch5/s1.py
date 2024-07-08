@@ -21,7 +21,7 @@ def learn2(
     errts: float | None = None,
     alpha: float | None = None,
 ):
-    errts = 1e-10 if errts is None else errts
+    errts = 1e-5 if errts is None else errts
     alpha = 1e-3 if alpha is None else alpha
     while True:
         pred = network(data, weights)

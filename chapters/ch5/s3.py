@@ -10,9 +10,10 @@ def network(data: Vector, weights: Matrix) -> Vector:
 def learn(
     weights: Matrix, wdeltas: Matrix, alphas: Matrix | float | int | None = None
 ) -> Matrix:
-    alphas = 1 if alphas is None else alphas
+    if alphas is None:
+        return submat(weights, wdeltas)
     if isinstance(alphas, (int, float)):
-        alphas = creatmat(len(weights), len(weights[0]), alphas)
+        return submat(weights, scalemat(wdeltas, alphas))
     return submat(weights, mulmatvec(wdeltas, alphas))
 
 
@@ -38,7 +39,7 @@ def learn2(
         if not any(update):
             return weights
         deltas = mulvec(deltas, update)
-        wdeltas = tuple(scalevec(data, delta) for delta in deltas)
+        wdeltas = mulmat(transpose((deltas,)), (data,))
         weights = learn(weights, wdeltas, alphas)
 
 
