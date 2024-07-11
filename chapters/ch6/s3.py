@@ -1,9 +1,9 @@
 from pprint import pprint
 from ..ch5 import util as u
 from random import SystemRandom as Random
-from .util import Network, creatnet, trannet
+from .util_old import Network, creatnet, trannet
 
-rand = Random(5052)
+rand = Random()
 
 trand: u.Transformer = lambda _: rand.random()
 
@@ -22,7 +22,7 @@ walk_vs_stop: u.Vector = 1, 1, 0, 0
 
 alpha: float = 5e-1
 error_threshold: float = 1e-30
-weights: Network = trannet(trand, creatnet(2, 3, 1))
+weights: Network = trannet(trand, creatnet(2, 6, 1))
 weights = trannet(lambda w: 2 * w - 1, weights)
 
 weights_0_1: u.Matrix = weights[0]

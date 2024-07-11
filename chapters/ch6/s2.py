@@ -1,6 +1,6 @@
 from itertools import count
 from ..ch5 import util as u, s3 as s
-from .util import *
+from .util_old import *
 from random import Random
 
 rand = Random(567)
